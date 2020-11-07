@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <h1> CALCULADORA </h1>
+
+    <form method="POST" action="/calcular"> 
+        <label for="a"> Digite o primeiro número:  </label>
+        <input type="text" name="a" id="a" placeholder="valor do primeiro número"/>
+        </br>
+        </br>
+        <label for="b"> Digite o segundo número: </label>
+        <input type="text" name="b" id="b" placeholder="valor do segundo número"/>
+        </br>
+        </br>
+        <label for="ope"> Digite a operação: </label>
+        <input type="text" name="ope" id="ope" placeholder="+ - * /"/>
+        </br>
+        </br>
+        <input type="submit" value="CALCULAR">
+
+    </form>
+    <h2 th:text="${resultado}"></h2>
+
+
+</body>
+</html>
